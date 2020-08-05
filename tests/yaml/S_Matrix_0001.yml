@@ -1,0 +1,18 @@
+resources:
+  - name: S_Matrix_0001_resource
+    type: PropertyBag
+    configuration:
+      runNumber: 0
+
+pipelines:
+  - name: pipeline_S_Matrix_0001
+    steps:
+      - name: S_Matrix_0001
+        type: Matrix
+        configuration:
+          inputResources:
+            - name: S_Matrix_0001_resource
+              newVersionOnly: true
+        execution:
+          onExecute:
+            - echo "test"
