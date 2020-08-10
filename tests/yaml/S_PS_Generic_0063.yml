@@ -1,0 +1,19 @@
+resources:
+  - name: S_PS_Generic_0063_resource
+    type: PropertyBag
+    configuration:
+      runNumber: 0
+
+pipelines:
+  - name: pipeline_S_PS_Generic_0063
+    steps:
+      - name: S_PS_Generic_0063
+        type: PowerShell
+        configuration:
+          nodePool: win_2019
+          allowFailure: true
+          inputResources:
+            - name: S_PS_Generic_0063_resource
+        execution:
+          onExecute:
+            - echo "test"

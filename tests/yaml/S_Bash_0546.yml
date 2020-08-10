@@ -1,0 +1,18 @@
+pipelines:
+  - name: pipeline_S_Bash_0546
+    steps:
+      - name: S_Bash_0546_001
+        type: Bash
+        configuration:
+          allowFailure: true
+        execution:
+          onExecute:
+            - return 1
+      - name: S_Bash_0546_002
+        type: Bash
+        configuration:
+          inputSteps:
+            - name: S_Bash_0546_001
+        execution:
+          onExecute:
+            - echo "test"
