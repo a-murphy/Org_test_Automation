@@ -1,12 +1,12 @@
 GitRepo:
   name: fooGitRepo
   gitProvider: s_gitHub
-  path: jfbetapipeorg/Org_test_Automation
+  path: a-murphy/Org_test_Automation
   branches:
     include: 'master'
 
 artifactoryIntegration: s_artifactory
-  
+
 Image:
   name: fooImage
   sourceRepository: foo
