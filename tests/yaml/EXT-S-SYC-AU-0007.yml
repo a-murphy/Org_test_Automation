@@ -11,7 +11,7 @@ pipelines:
         type: UploadArtifact
         configuration:
           targetPath: "test-automation-generic-local/EXT_S_SYC_AU_0007"
-          xrayScan: true
+          forceXrayScan: true
           integrations:
             - name: s_artifactory
           inputResources:
