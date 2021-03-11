@@ -1,11 +1,11 @@
 pipelines:
-  - name: S_WF_041
+  - name: S_Matrix_0065
     steps:
-      - name: S_WF_041
+      - name: S_Matrix_0065
         type: Matrix
         stepMode: Bash
         configuration:
-          multiNode: true
+          multiNode: false
         stepletMultipliers:
           environmentVariables:
             - test: "one"
